@@ -956,3 +956,5 @@ Prefix dict has been built succesfully.
 [pid: 8884|app: 0|req: 2/2] 172.16.133.160 () {44 vars in 815 bytes} [Sat Sep 29 17:53:52 2018] GET /4/ => generated 6703 bytes in 2072 msecs (HTTP/1.1 200) 5 headers in 158 bytes (1 switches on core 1)
 [2018-09-29 17:53:58,360] [INFO] legetest
 [pid: 8884|app: 0|req: 3/3] 172.16.133.160 () {44 vars in 848 bytes} [Sat Sep 29 17:53:58 2018] GET /user/login/ => generated 3095 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+[pid: 8884|app: 0|req: 4/4] 172.16.133.160 () {42 vars in 787 bytes} [Sat Sep 29 18:14:10 2018] GET / => generated 6889 bytes in 553 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 8884|app: 0|req: 5/5] 172.16.133.160 () {42 vars in 787 bytes} [Sat Sep 29 18:14:13 2018] GET / => generated 6889 bytes in 135 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)

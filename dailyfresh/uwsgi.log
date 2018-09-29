@@ -1,0 +1,958 @@
+invalid request block size: 21573 (max 8192)...skip
+invalid request block size: 21573 (max 8192)...skip
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 16:15:46 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 31 July 2018 09:20:21
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.16.133.19:8000).
+bind(): Address already in use [core/socket.c line 769]
+invalid request block size: 21573 (max 8192)...skip
+invalid request block size: 21573 (max 8192)...skip
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 16:18:07 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 31 July 2018 09:20:21
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.16.133.19:8000).
+bind(): Address already in use [core/socket.c line 769]
+invalid request block size: 21573 (max 8192)...skip
+Sat Sep 29 16:19:44 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Sep 29 16:19:44 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Sep 29 16:19:44 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Sep 29 16:19:44 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 16:19:50 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 31 July 2018 09:20:21
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 |Anaconda, Inc.| (default, Jun 28 2018, 17:14:51)  [GCC 7.2.0]
+Python main interpreter initialized at 0x18d5060
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "dailyfresh/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/hr/anaconda3/lib/python3.6/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/hr/anaconda3/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/hr/anaconda3/lib/python3.6/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/home/hr/anaconda3/lib/python3.6/site-packages/django/apps/config.py", line 94, in create
+    module = import_module(entry)
+  File "/home/hr/anaconda3/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tinymce'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7660)
+spawned uWSGI worker 1 (pid: 7662, cores: 2)
+spawned uWSGI worker 2 (pid: 7663, cores: 2)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 16:24:09 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 31 July 2018 09:20:21
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.16.133.19:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 16:25:28 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 31 July 2018 09:20:21
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (172.16.133.19:8000).
+bind(): Address already in use [core/socket.c line 769]
+Sat Sep 29 16:26:19 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Sep 29 16:26:19 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Sep 29 16:26:19 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sat Sep 29 16:26:19 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 16:27:39 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 31 July 2018 09:20:21
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 |Anaconda, Inc.| (default, Jun 28 2018, 17:14:51)  [GCC 7.2.0]
+Python main interpreter initialized at 0x1370060
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "dailyfresh/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/hr/anaconda3/lib/python3.6/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/hr/anaconda3/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/hr/anaconda3/lib/python3.6/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/home/hr/anaconda3/lib/python3.6/site-packages/django/apps/config.py", line 94, in create
+    module = import_module(entry)
+  File "/home/hr/anaconda3/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tinymce'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7715)
+spawned uWSGI worker 1 (pid: 7717, cores: 2)
+spawned uWSGI worker 2 (pid: 7718, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 16:30:17 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 31 July 2018 09:20:21
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 |Anaconda, Inc.| (default, Jun 28 2018, 17:14:51)  [GCC 7.2.0]
+Python main interpreter initialized at 0x29ff060
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x29ff060 pid: 7760 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7760)
+spawned uWSGI worker 1 (pid: 7762, cores: 2)
+spawned uWSGI worker 2 (pid: 7763, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 16:55:41 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 29 September 2018 07:46:47
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/envs/py27/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15 |Anaconda, Inc.| (default, May  1 2018, 23:32:55)  [GCC 7.2.0]
+Python main interpreter initialized at 0x16341c0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "dailyfresh/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ImportError: No module named django.core.wsgi
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8448)
+spawned uWSGI worker 1 (pid: 8449, cores: 2)
+spawned uWSGI worker 2 (pid: 8450, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 17:03:06 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 29 September 2018 07:46:47
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/envs/py27/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15 |Anaconda, Inc.| (default, May  1 2018, 23:32:55)  [GCC 7.2.0]
+Set PythonHome to /home/hr/anaconda3/envs/py27
+Python main interpreter initialized at 0xe4f220
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "dailyfresh/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ImportError: No module named django.core.wsgi
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8490)
+spawned uWSGI worker 1 (pid: 8491, cores: 2)
+spawned uWSGI worker 2 (pid: 8492, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 17:06:01 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 29 September 2018 07:46:47
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/envs/py27/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15 |Anaconda, Inc.| (default, May  1 2018, 23:32:55)  [GCC 7.2.0]
+Python main interpreter initialized at 0x15d6e40
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+added /home/hr/anaconda3/envs/py27/lib/python2.7/site-packages/ to pythonpath.
+Traceback (most recent call last):
+  File "dailyfresh/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ImportError: No module named django.core.wsgi
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8502)
+spawned uWSGI worker 1 (pid: 8503, cores: 2)
+spawned uWSGI worker 2 (pid: 8504, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 17:18:11 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 29 September 2018 07:46:47
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/envs/py27/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15 |Anaconda, Inc.| (default, May  1 2018, 23:32:55)  [GCC 7.2.0]
+Python main interpreter initialized at 0x1881e30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+added /home/hr/anaconda3/envs/py27/lib/python2.7/site-packages/ to pythonpath.
+Traceback (most recent call last):
+  File "dailyfresh/wsgi.py", line 12, in <module>
+    from django.core.wsgi import get_wsgi_application
+ImportError: No module named django.core.wsgi
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8715)
+spawned uWSGI worker 1 (pid: 8716, cores: 2)
+spawned uWSGI worker 2 (pid: 8717, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 17:24:15 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 29 September 2018 07:46:47
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/envs/py27/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15 |Anaconda, Inc.| (default, May  1 2018, 23:32:55)  [GCC 7.2.0]
+Python main interpreter initialized at 0x1a68e30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+added /home/hr/anaconda3/envs/py27/lib/python2.7/site-packages/ to pythonpath.
+Traceback (most recent call last):
+  File "dailyfresh/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/hr/anaconda3/envs/py27/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/hr/anaconda3/envs/py27/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/home/hr/anaconda3/envs/py27/lib/python2.7/site-packages/django/conf/__init__.py", line 56, in __getattr__
+    self._setup(name)
+  File "/home/hr/anaconda3/envs/py27/lib/python2.7/site-packages/django/conf/__init__.py", line 41, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/hr/anaconda3/envs/py27/lib/python2.7/site-packages/django/conf/__init__.py", line 110, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/home/hr/anaconda3/envs/py27/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./dailyfresh/settings.py", line 17, in <module>
+    import pymysql
+ImportError: No module named pymysql
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8740)
+spawned uWSGI worker 1 (pid: 8742, cores: 2)
+spawned uWSGI worker 2 (pid: 8743, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 17:25:30 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 29 September 2018 07:46:47
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/envs/py27/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15 |Anaconda, Inc.| (default, May  1 2018, 23:32:55)  [GCC 7.2.0]
+Python main interpreter initialized at 0x1f14e60
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+added /usr/local/python36/lib/python3.6/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x1f14e60 pid: 8751 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8751)
+spawned uWSGI worker 1 (pid: 8753, cores: 2)
+spawned uWSGI worker 2 (pid: 8754, cores: 2)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 17:29:02 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 29 September 2018 07:46:47
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/envs/py27/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 127.0.0.1:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:37540 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15 |Anaconda, Inc.| (default, May  1 2018, 23:32:55)  [GCC 7.2.0]
+Python main interpreter initialized at 0x86ff70
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+added /usr/local/python36/lib/python3.6/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x86ff70 pid: 8766 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8766)
+spawned uWSGI worker 1 (pid: 8768, cores: 2)
+spawned uWSGI worker 2 (pid: 8769, cores: 2)
+spawned uWSGI http 1 (pid: 8770)
+[2018-09-29 17:29:07,120] [INFO] hah
+[2018-09-29 17:29:07,121] [INFO] hah
+[2018-09-29 17:29:07,121] [INFO] hah
+[2018-09-29 17:29:07,144] [INFO] hah
+[2018-09-29 17:29:07,145] [INFO] hah
+[2018-09-29 17:29:07,145] [INFO] hah
+[2018-09-29 17:29:07,145] [INFO] hah
+[2018-09-29 17:29:07,150] [INFO] hah
+[2018-09-29 17:29:07,150] [INFO] hah
+[2018-09-29 17:29:07,150] [INFO] hah
+[pid: 8769|app: 0|req: 1/1] 127.0.0.1 () {38 vars in 634 bytes} [Sat Sep 29 17:29:06 2018] GET / => generated 6889 bytes in 1184 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 8769|app: 0|req: 2/2] 127.0.0.1 () {40 vars in 687 bytes} [Sat Sep 29 17:29:07 2018] GET /static/css/reset.css => generated 0 bytes in 4 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 8769|app: 0|req: 3/3] 127.0.0.1 () {40 vars in 685 bytes} [Sat Sep 29 17:29:07 2018] GET /static/css/main.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8769|app: 0|req: 4/4] 127.0.0.1 () {40 vars in 668 bytes} [Sat Sep 29 17:29:07 2018] GET /static/js/slide.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[2018-09-29 17:29:07,990] [INFO] hah
+[2018-09-29 17:29:07,990] [INFO] hah
+[2018-09-29 17:29:07,990] [INFO] hah
+[2018-09-29 17:29:07,994] [INFO] hah
+[2018-09-29 17:29:07,994] [INFO] hah
+[2018-09-29 17:29:07,994] [INFO] hah
+[2018-09-29 17:29:07,994] [INFO] hah
+[2018-09-29 17:29:07,995] [INFO] hah
+[2018-09-29 17:29:07,995] [INFO] hah
+[2018-09-29 17:29:07,995] [INFO] hah
+[pid: 8769|app: 0|req: 6/5] 127.0.0.1 () {40 vars in 682 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/slide03.jpg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 8769|app: 0|req: 7/6] 127.0.0.1 () {40 vars in 682 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/slide04.jpg => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8769|app: 0|req: 8/7] 127.0.0.1 () {40 vars in 682 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/slide02.jpg => generated 0 bytes in 5 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 8769|app: 0|req: 9/8] 127.0.0.1 () {40 vars in 678 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/adv01.jpg => generated 0 bytes in 7 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8768|app: 0|req: 2/9] 127.0.0.1 () {40 vars in 684 bytes} [Sat Sep 29 17:29:07 2018] GET /static/js/jquery-ui.min.js => generated 0 bytes in 246 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 8769|app: 0|req: 10/10] 127.0.0.1 () {40 vars in 678 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/adv02.jpg => generated 0 bytes in 4 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8769|app: 0|req: 11/11] 127.0.0.1 () {40 vars in 684 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/banner01.jpg => generated 0 bytes in 9 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 8768|app: 0|req: 3/12] 127.0.0.1 () {40 vars in 682 bytes} [Sat Sep 29 17:29:08 2018] GET /static/goods/goods002.jpg => generated 0 bytes in 9 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 8768|app: 0|req: 4/13] 127.0.0.1 () {40 vars in 692 bytes} [Sat Sep 29 17:29:07 2018] GET /static/js/jquery-1.12.4.min.js => generated 0 bytes in 263 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8769|app: 0|req: 12/14] 127.0.0.1 () {40 vars in 684 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/banner03.jpg => generated 0 bytes in 12 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8769|app: 0|req: 13/15] 127.0.0.1 () {40 vars in 684 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/banner02.jpg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8769|app: 0|req: 13/16] 127.0.0.1 () {40 vars in 684 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/banner05.jpg => generated 0 bytes in 11 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 8768|app: 0|req: 5/17] 127.0.0.1 () {40 vars in 682 bytes} [Sat Sep 29 17:29:08 2018] GET /static/goods/goods012.jpg => generated 0 bytes in 7 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 8768|app: 0|req: 5/18] 127.0.0.1 () {40 vars in 678 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/slide.jpg => generated 0 bytes in 8 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8768|app: 0|req: 6/19] 127.0.0.1 () {40 vars in 684 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/banner04.jpg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 8768|app: 0|req: 7/20] 127.0.0.1 () {40 vars in 682 bytes} [Sat Sep 29 17:29:08 2018] GET /static/goods/goods003.jpg => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8768|app: 0|req: 8/21] 127.0.0.1 () {40 vars in 676 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/logo.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8769|app: 0|req: 15/22] 127.0.0.1 () {40 vars in 684 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/banner06.jpg => generated 0 bytes in 3 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[pid: 8769|app: 0|req: 15/23] 127.0.0.1 () {40 vars in 682 bytes} [Sat Sep 29 17:29:08 2018] GET /static/goods/goods001.jpg => generated 0 bytes in 8 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 0)
+[pid: 8769|app: 0|req: 16/24] 127.0.0.1 () {40 vars in 697 bytes} [Sat Sep 29 17:29:08 2018] GET /static/images/icons.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 2 headers in 77 bytes (0 switches on core 1)
+[2018-09-29 17:29:08,361] [WARNING] Not Found: /favicon.ico
+[pid: 8769|app: 0|req: 17/25] 127.0.0.1 () {36 vars in 561 bytes} [Sat Sep 29 17:29:08 2018] GET /favicon.ico => generated 3264 bytes in 21 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[2018-09-29 17:29:08,379] [WARNING] Not Found: /favicon.ico
+[pid: 8769|app: 0|req: 18/26] 127.0.0.1 () {36 vars in 621 bytes} [Sat Sep 29 17:29:08 2018] GET /favicon.ico => generated 3264 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 8770)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 17:32:31 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 29 September 2018 07:46:47
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/envs/py27/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15 |Anaconda, Inc.| (default, May  1 2018, 23:32:55)  [GCC 7.2.0]
+Python main interpreter initialized at 0x955e60
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+added /usr/local/python36/lib/python3.6/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x955e60 pid: 8805 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8805)
+spawned uWSGI worker 1 (pid: 8807, cores: 2)
+spawned uWSGI worker 2 (pid: 8808, cores: 2)
+[2018-09-29 17:33:24,621] [INFO] hah
+[2018-09-29 17:33:24,622] [INFO] hah
+[2018-09-29 17:33:24,622] [INFO] hah
+[2018-09-29 17:33:24,791] [INFO] hah
+[2018-09-29 17:33:24,791] [INFO] hah
+[2018-09-29 17:33:24,791] [INFO] hah
+[2018-09-29 17:33:24,791] [INFO] hah
+[2018-09-29 17:33:24,792] [INFO] hah
+[2018-09-29 17:33:24,792] [INFO] hah
+[2018-09-29 17:33:24,792] [INFO] hah
+[pid: 8808|app: 0|req: 1/1] 172.16.133.160 () {42 vars in 774 bytes} [Sat Sep 29 17:33:24 2018] GET / => generated 6889 bytes in 358 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[2018-09-29 17:33:25,540] [WARNING] Not Found: /favicon.ico
+[pid: 8808|app: 0|req: 2/2] 172.16.133.160 () {36 vars in 628 bytes} [Sat Sep 29 17:33:25 2018] GET /favicon.ico => generated 85 bytes in 47 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[2018-09-29 17:41:40,321] [ERROR] Internal Server Error: /4/
+Traceback (most recent call last):
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./df_goods/views.py", line 58, in detail
+    goods.save()
+  File "/usr/local/python36/lib/python3.6/site-packages/django/db/models/base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/db/models/base.py", line 848, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/usr/local/python36/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/backends/whoosh_cn_backend.py", line 180, in update
+    self.setup()
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/backends/whoosh_cn_backend.py", line 127, in setup
+    self.index = self.storage.open_index(schema=self.schema)
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/filedb/filestore.py", line 176, in open_index
+    return indexclass(self, schema=schema, indexname=indexname)
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/index.py", line 664, in read
+    segments = stream.read_pickle()
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/filedb/structfile.py", line 245, in read_pickle
+    return load_pickle(self.file)
+ValueError: unsupported pickle protocol: 4
+[pid: 8808|app: 0|req: 3/3] 172.16.133.160 () {44 vars in 815 bytes} [Sat Sep 29 17:41:40 2018] GET /4/ => generated 27 bytes in 253 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+[2018-09-29 17:41:48,924] [ERROR] Internal Server Error: /3/
+Traceback (most recent call last):
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./df_goods/views.py", line 58, in detail
+    goods.save()
+  File "/usr/local/python36/lib/python3.6/site-packages/django/db/models/base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/db/models/base.py", line 848, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/usr/local/python36/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/backends/whoosh_cn_backend.py", line 180, in update
+    self.setup()
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/backends/whoosh_cn_backend.py", line 127, in setup
+    self.index = self.storage.open_index(schema=self.schema)
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/filedb/filestore.py", line 176, in open_index
+    return indexclass(self, schema=schema, indexname=indexname)
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/index.py", line 664, in read
+    segments = stream.read_pickle()
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/filedb/structfile.py", line 245, in read_pickle
+    return load_pickle(self.file)
+ValueError: unsupported pickle protocol: 4
+[pid: 8808|app: 0|req: 4/4] 172.16.133.160 () {44 vars in 815 bytes} [Sat Sep 29 17:41:48 2018] GET /3/ => generated 27 bytes in 166 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 8808|app: 0|req: 5/5] 172.16.133.160 () {42 vars in 774 bytes} [Sat Sep 29 17:42:45 2018] GET / => generated 6889 bytes in 113 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 8808|app: 0|req: 6/6] 172.16.133.160 () {44 vars in 811 bytes} [Sat Sep 29 17:42:48 2018] GET / => generated 6889 bytes in 102 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 1)
+[2018-09-29 17:42:53,912] [ERROR] Internal Server Error: /4/
+Traceback (most recent call last):
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./df_goods/views.py", line 58, in detail
+    goods.save()
+  File "/usr/local/python36/lib/python3.6/site-packages/django/db/models/base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/python36/lib/python3.6/site-packages/django/db/models/base.py", line 848, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/usr/local/python36/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/backends/whoosh_cn_backend.py", line 180, in update
+    self.setup()
+  File "/usr/local/python36/lib/python3.6/site-packages/haystack/backends/whoosh_cn_backend.py", line 127, in setup
+    self.index = self.storage.open_index(schema=self.schema)
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/filedb/filestore.py", line 176, in open_index
+    return indexclass(self, schema=schema, indexname=indexname)
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/index.py", line 664, in read
+    segments = stream.read_pickle()
+  File "/usr/local/python36/lib/python3.6/site-packages/whoosh/filedb/structfile.py", line 245, in read_pickle
+    return load_pickle(self.file)
+ValueError: unsupported pickle protocol: 4
+[pid: 8808|app: 0|req: 7/7] 172.16.133.160 () {44 vars in 815 bytes} [Sat Sep 29 17:42:53 2018] GET /4/ => generated 27 bytes in 167 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 17:51:32 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 29 September 2018 07:46:47
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/envs/py27/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.15 |Anaconda, Inc.| (default, May  1 2018, 23:32:55)  [GCC 7.2.0]
+Python main interpreter initialized at 0x11afec0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+added /home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x11afec0 pid: 8863 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8863)
+spawned uWSGI worker 1 (pid: 8865, cores: 2)
+spawned uWSGI worker 2 (pid: 8866, cores: 2)
+[2018-09-29 17:51:38,121] [INFO] hah
+[2018-09-29 17:51:38,122] [INFO] hah
+[2018-09-29 17:51:38,122] [INFO] hah
+[2018-09-29 17:51:39,137] [INFO] hah
+[2018-09-29 17:51:39,138] [INFO] hah
+[2018-09-29 17:51:39,138] [INFO] hah
+[2018-09-29 17:51:39,138] [INFO] hah
+[2018-09-29 17:51:39,139] [INFO] hah
+[2018-09-29 17:51:39,139] [INFO] hah
+[2018-09-29 17:51:39,139] [INFO] hah
+[pid: 8866|app: 0|req: 1/1] 172.16.133.160 () {42 vars in 774 bytes} [Sat Sep 29 17:51:38 2018] GET / => generated 6889 bytes in 1267 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[2018-09-29 17:51:43,787] [ERROR] Internal Server Error: /4/
+Traceback (most recent call last):
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./df_goods/views.py", line 58, in detail
+    goods.save()
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/django/db/models/base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/django/db/models/base.py", line 848, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 193, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/haystack/backends/whoosh_cn_backend.py", line 180, in update
+    self.setup()
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/haystack/backends/whoosh_cn_backend.py", line 127, in setup
+    self.index = self.storage.open_index(schema=self.schema)
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/whoosh/filedb/filestore.py", line 176, in open_index
+    return indexclass(self, schema=schema, indexname=indexname)
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/whoosh/index.py", line 421, in __init__
+    TOC.read(self.storage, self.indexname, schema=self._schema)
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/whoosh/index.py", line 664, in read
+    segments = stream.read_pickle()
+  File "/home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/whoosh/filedb/structfile.py", line 245, in read_pickle
+    return load_pickle(self.file)
+ValueError: unsupported pickle protocol: 4
+[pid: 8866|app: 0|req: 2/2] 172.16.133.160 () {44 vars in 815 bytes} [Sat Sep 29 17:51:43 2018] GET /4/ => generated 27 bytes in 250 msecs (HTTP/1.1 500) 4 headers in 126 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Sep 29 17:53:36 2018] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-18) on 31 July 2018 09:20:21
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013
+nodename: haorong
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/haorong/dailyfresh-1/dailyfresh
+writing pidfile to uwsgi.pid
+detected binary path: /home/hr/anaconda3/envs/learn2/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/haorong/dailyfresh-1/dailyfresh
+your processes number limit is 16384
+your memory page size is 4096 bytes
+detected max file descriptor number: 65536
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 172.16.133.19:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 |Anaconda, Inc.| (default, Jun 28 2018, 17:14:51)  [GCC 7.2.0]
+Python main interpreter initialized at 0x20ee480
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 618762 bytes (604 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+added /home/hr/anaconda3/envs/learn2/lib/python3.6/site-packages/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x20ee480 pid: 8882 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8882)
+spawned uWSGI worker 1 (pid: 8884, cores: 2)
+spawned uWSGI worker 2 (pid: 8885, cores: 2)
+[2018-09-29 17:53:49,851] [INFO] hah
+[2018-09-29 17:53:49,851] [INFO] hah
+[2018-09-29 17:53:49,851] [INFO] hah
+[2018-09-29 17:53:50,108] [INFO] hah
+[2018-09-29 17:53:50,109] [INFO] hah
+[2018-09-29 17:53:50,109] [INFO] hah
+[2018-09-29 17:53:50,110] [INFO] hah
+[2018-09-29 17:53:50,116] [INFO] hah
+[2018-09-29 17:53:50,117] [INFO] hah
+[2018-09-29 17:53:50,117] [INFO] hah
+[pid: 8884|app: 0|req: 1/1] 172.16.133.160 () {42 vars in 774 bytes} [Sat Sep 29 17:53:49 2018] GET / => generated 6889 bytes in 496 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Building prefix dict from the default dictionary ...
+Dumping model to file cache /tmp/jieba.cache
+Loading model cost 1.806 seconds.
+Prefix dict has been built succesfully.
+[pid: 8884|app: 0|req: 2/2] 172.16.133.160 () {44 vars in 815 bytes} [Sat Sep 29 17:53:52 2018] GET /4/ => generated 6703 bytes in 2072 msecs (HTTP/1.1 200) 5 headers in 158 bytes (1 switches on core 1)
+[2018-09-29 17:53:58,360] [INFO] legetest
+[pid: 8884|app: 0|req: 3/3] 172.16.133.160 () {44 vars in 848 bytes} [Sat Sep 29 17:53:58 2018] GET /user/login/ => generated 3095 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
